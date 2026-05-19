@@ -14,20 +14,6 @@ Good commit messages help the team:
 
 Bad commit messages create confusion after a few days or months.
 
-### Bad Examples
-```bash
-git commit -m "fixes"
-git commit -m "changes"
-git commit -m "updated"
-git commit -m "misc"
-git commit -m "final fix"
-```
-
-These messages do not explain:
-- What changed
-- Why it changed
-- Which module was affected
-
 ---
 
 ## Bad vs Good Examples
@@ -151,43 +137,6 @@ Feat(Auth): Added Login API
 
 ---
 
-### 3. One Commit = One Purpose
-
-❌ Bad
-```bash
-feat: add login and fix navbar and update README
-```
-
-✅ Good
-```bash
-feat(auth): add login page
-fix(ui): correct navbar responsiveness
-docs(readme): update setup guide
-```
-
----
-
-### 4. Commit Frequently
-
-Do not keep large uncommitted changes for many days.
-
-Small commits are:
-- Easier to review
-- Easier to debug
-- Easier to revert
-
----
-
-### 5. Write Meaningful Descriptions
-
-Ask yourself:
-
-> “If I see this commit after 6 months, will I understand what changed?”
-
-If the answer is no, improve the commit message.
-
----
-
 ## Team Guidelines
 
 ### Daily Pushes
@@ -240,15 +189,3 @@ Before creating a PR:
 This helps maintain proper review flow and avoids confusion.
 
 ---
-
-## Final Reminder
-
-Good commit messages are a small effort today that save a lot of time in the future.
-
-A clean Git history makes the project:
-- Easier to maintain
-- Easier to debug
-- Easier to scale
-- More professional for the entire team
-
-> Write commits for your future self and your teammates.
